@@ -30,7 +30,10 @@
     - Data augmentation balanced the train and validation accuracy, however there is no major improvement in test accuracy compared to previous one.
     - Rebalancing the classes increased the test accuracy by 3-4%. It is still not able to predict unseen patterns. Validation accuracy is higher than training accuracy.
     - Adding one more Convolution layer has increased test accuracy by additional 3-4%, but adding more feature maps hasn't shown any improvement in the test accuracy.
-    -
+    - More types of image augmentation techniques needs to be added using say imgaug library, so that it might uncover patterns of test data.
+    - More dense layers and convolution layers may help, but since Colab GPU limit has exhausted, training each model variation on local machine is taking couple of hours, couldn't test it further. Also, can test reducing the learning rate might improve on test accuracy.
+    - Tried using keras-tuner for Hyperparameter tuning(dropout, learningrate, number of dense layers), however since each trial was taking almost couple of hours, couldn't proceed further on local machine.
+
 
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
