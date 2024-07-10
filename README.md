@@ -25,8 +25,11 @@
 -Considered Adam and SGD optimizer
   - SGD optimizer doesn't seem to perform well, it has very less train and validation accuracy
   - ADAM optimizer is considered for the following  
-    - Basic model seems to overfit with in 9-10 epochs with almost 62% training accuracy and 55% validation accuracy, but with only 33% of test accuracy.
-    - Adding a dropout of 0.2 improved the validation accuracy a bit, however the test accuracy hasn't improved.
+    - Basic model seems to overfit with in 9-10 epochs with almost 72% training accuracy and 51% validation accuracy, but with only 27% of test accuracy.
+    - Adding a dropout of 0.2 improved the balance a bit between train and validation accuracy. It also improved test accuracy by 8%.
+    - Data augmentation balanced the train and validation accuracy, however there is no major improvement in test accuracy compared to previous one.
+    - Rebalancing the classes increased the test accuracy by 3-4%. It is still not able to predict unseen patterns. Validation accuracy is higher than training accuracy.
+    - Adding one more Convolution layer has increased test accuracy by additional 3-4%, but adding more feature maps hasn't shown any improvement in the test accuracy.
     -
 
 
