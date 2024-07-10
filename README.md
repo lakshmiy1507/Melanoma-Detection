@@ -22,12 +22,12 @@
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Applicants are likely to default 
-  - Part of few states ‘NE’ and zipcode starting with 999,663,352
-  - Higher DTI 
-  - Borrow money for ‘Renewable energy’ and ‘Small business’ Purposes
-  - Higher grades 
-  - Annual Income with 500-700K tend to default more. Also, applicants less than 25K
+-Considered Adam and SGD optimizer
+  - SGD optimizer doesn't seem to perform well, it has very less train and validation accuracy
+  - ADAM optimizer is considered for the following  
+    - Basic model seems to overfit with in 9-10 epochs with almost 62% training accuracy and 55% validation accuracy, but with only 33% of test accuracy.
+    - Adding a dropout of 0.2 improved the validation accuracy a bit, however the test accuracy hasn't improved.
+    -
 
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
